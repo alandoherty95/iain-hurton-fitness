@@ -118,6 +118,12 @@ ul.recipe-ingredients {
     line-height: 3rem;
 }
 
-.social-links a {
+ul.social-links {
+    line-height: 2rem;
     color: #ffffff;
+}
+
+.carousel .carousel-item {
+    width: 30rem;
+    height: auto;
 }
