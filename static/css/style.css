@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Containers */
+.container-wrapper {
+    margin: 0;
+}
+
+.callout-container {
+    height: 100vh;
+
+    background: url('https://github.com/alandoherty95/HurtonFitnessLive/blob/master/static/img/iain-cover-image.jpg?raw=true') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.content-container {
+    padding-top: 75px;
+    padding-bottom: 75px;
+}
+
+/* jumbotron */
+
+.jumbotron {
+    background-color: transparent;
+}
+
+.jumbotron h1 {
+    color: white;
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: white;
+    font-size: 6em;
+}
+
+.jumbotron .roles {
+    margin: 25px 0;
+    color: white;
+    font-size: 2em;
+}
+
+.jumbotron small {
+    font-size: 60%;
+    font-style: italic;
+}
+
+/* block dividers */
+
+.block-divider {
+    width: 75px;
+    height: 5px;
+    border: 0;
+    background-color: #444;
+}
+
+.block-divider--yellow {
+    background-color: #eec802;
+}
+
+.block-divider--white {
+    background-color: white;
+}
+
+.block-divider--short {
+    width: 35px;
+}
