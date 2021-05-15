@@ -1,12 +1,20 @@
 {% extends "base.html" %}
 {% block content %}
 
-<div class="carousel">
-    <a class="carousel-item" href="#one!"><img src="https://picsum.photos/id/237/200/300"></a>
-    <a class="carousel-item" href="#two!"><img src="https://picsum.photos/seed/picsum/200/300"></a>
-    <a class="carousel-item" href="#three!"><img src="https://picsum.photos/200/300?grayscale"></a>
-    <a class="carousel-item" href="#four!"><img src="https://picsum.photos/200/300/?blur"></a>
-    <a class="carousel-item" href="#five!"><img src="https://picsum.photos/id/870/200/300?grayscale&blur=2"></a>
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <h3 class="teal-text">Gallery</h3>
+        </div>
+    </div>
+    <!-- about content goes here -->
+    <div class="carousel">
+        <a class="carousel-item" href="#one!"><img src="https://picsum.photos/id/237/200/300"></a>
+        <a class="carousel-item" href="#two!"><img src="https://picsum.photos/seed/picsum/200/300"></a>
+        <a class="carousel-item" href="#three!"><img src="https://picsum.photos/200/300?grayscale"></a>
+        <a class="carousel-item" href="#four!"><img src="https://picsum.photos/200/300/?blur"></a>
+        <a class="carousel-item" href="#five!"><img src="https://picsum.photos/id/870/200/300?grayscale&blur=2"></a>
+    </div>
 </div>
 
 {% endblock %}
