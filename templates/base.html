@@ -1,39 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" type="text/css" />
-    <!-- bootstrap -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js" integrity="sha512-XKa9Hemdy1Ui3KSGgJdgMyYlUg1gM+QhL6cnlyTe2qzMCYm4nAZ1PsVerQzTTXzonUR+dmswHqgJPuwCq1MaAg==" crossorigin="anonymous"></script>
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" type="text/css" />
     <!-- materialize compiled and minified css -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+        type="text/css">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" type="text/css">
     {% block styles %}
     {% endblock %}
     <title>Hurton Fitness</title>
 </head>
+
 <body>
 
     <header>
-            <!-- top navigation bar -->
-            <nav class="nav extended">
-                <div class="nav-wrapper teal lighten-2">
-                    <a href="{{ url_for('home') }}" class="brand-logo">Hurton Fitness</a>
-                    <a href="#" data-target="mobile-demo" class="sidenav-trigger right"><i class="fas fa-bars"></i></a>
-                    <ul class="right hide-on-med-and-down">
-                        <li><a href="{{ url_for('home') }}">Home</a></li>
-                        <li><a href="{{ url_for('about') }}">About</a></li>
-                        <li><a href="{{ url_for('contact') }}">Contact</a></li>
-                        <li><a href="{{ url_for('events') }}">Events</a></li>
-                        <li><a href="{{ url_for('gallery') }}">Gallery</a></li>
-                    </ul>
-                </div>
-            </nav>
+        <!-- top navigation bar -->
+        <nav class="nav extended">
+            <div class="nav-wrapper teal lighten-2">
+                <a href="{{ url_for('home') }}" class="brand-logo">Hurton Fitness</a>
+                <a href="#" data-target="mobile-demo" class="sidenav-trigger right"><i class="fas fa-bars"></i></a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="{{ url_for('home') }}">Home</a></li>
+                    <li><a href="{{ url_for('about') }}">About</a></li>
+                    <li><a href="{{ url_for('contact') }}">Contact</a></li>
+                    <li><a href="{{ url_for('events') }}">Events</a></li>
+                    <li><a href="{{ url_for('gallery') }}">Gallery</a></li>
+                </ul>
+            </div>
+        </nav>
 
         <ul class="right sidenav" id="mobile-demo">
-            <li><h4 class="center-align">Hurton Fitness</h4></li>
+            <li>
+                <h4 class="center-align">Hurton Fitness</h4>
+            </li>
             <li><a href="{{ url_for('home') }}">Home</a></li>
             <li><a href="{{ url_for('about') }}">About</a></li>
             <li><a href="{{ url_for('contact') }}">Contact</a></li>
@@ -49,8 +55,16 @@
         <div class="container">
             <div class="row">
                 <div class="col l6 s12">
-                    <h5 class="white-text">Hurton Fitness</h5>
-                    <p class="grey-text text-lighten-4">Fitness Instructor, Personal Trainer & Swimming Teacher</p>
+                    <div id="social-links">
+                        <h5 class="white-text">Hurton Fitness</h5>
+                        <p class="grey-text text-lighten-4">Fitness Instructor, Personal Trainer & Swimming Teacher</p>
+                        <a href="https://www.facebook.com/pages/category/Personal-Blog/Iain-Hurton-Fitness-2181026858613543/"
+                        target="_blank"><i class="fa fa-facebook"></i> Facebook</a>
+                        <a href="https://open.spotify.com/playlist/59xQzFKBIph1NGVyC7e1zB?si=zeuUQVdgRg-gATAyl1OJbg"
+                        target="_blank"><i class="fa fa-spotify"></i> Spotify</a>
+                        <a href="https://www.instagram.com/hurtonsfitness/?hl=en" target="_blank"><i
+                            class="fa fa-instagram"></i> Instagram</a>
+                    </div>
                 </div>
                 <div class="col l4 offset-l2 s12">
                     <h5 class="white-text">Links</h5>
@@ -67,20 +81,19 @@
         <div class="footer-copyright">
             <div class="container">
                 © 2021 Doherty
-                <a href="https://www.facebook.com/pages/category/Personal-Blog/Iain-Hurton-Fitness-2181026858613543/" target="_blank"><i class="fa fa-facebook"></i> Facebook</a>
-                <a href="https://open.spotify.com/playlist/59xQzFKBIph1NGVyC7e1zB?si=zeuUQVdgRg-gATAyl1OJbg" target="_blank"><i class="fa fa-spotify"></i> Spotify</a>
-                <a href="https://www.instagram.com/hurtonsfitness/?hl=en" target="_blank"><i class="fa fa-instagram"></i> Instagram</a>
             </div>
         </div>
     </footer>
 
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="{{ url_for('static', filename='js/script.js') }}"></script>
 
     {% block scripts %}
     {% endblock %}
-    
+
 </body>
+
 </html>

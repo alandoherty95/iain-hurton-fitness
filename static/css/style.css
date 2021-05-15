@@ -103,10 +103,11 @@ a:visited {
     color: #ffffff;
 }
   
-/* mouse over link */
+/* mouse over link
 a:hover {
     background-color: #26a69a;
 }
+*/
   
 /* selected link */
 a:active {
@@ -115,4 +116,8 @@ a:active {
 
 ul.recipe-ingredients {
     line-height: 3rem;
+}
+
+.social-links a {
+    color: #ffffff;
 }
