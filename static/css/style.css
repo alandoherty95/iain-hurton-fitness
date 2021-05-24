@@ -54,16 +54,13 @@ a.brand-logo {
 }
 
 .jumbotron h1 {
-    color: white;
     font-weight: bold;
     margin-bottom: 30px;
-    color: white;
     font-size: 6em;
 }
 
 .jumbotron .roles {
     margin: 25px 0;
-    color: white;
     font-size: 2em;
 }
 
@@ -121,9 +118,4 @@ ul.recipe-ingredients {
 ul.social-links {
     line-height: 2rem;
     color: #ffffff;
-}
-
-.carousel .carousel-item {
-    width: 40rem;
-    height: auto;
 }
